@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Istifadəçi məlumat formu</title>
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  <meta charset="utf-8">
+</head>
+<body>
+	<article>
+		<h3>İstifadəçi məlumatlarını daxil edin</h3>
+		<form method="POST"  id="form" action="#">
+			<input type="text"  placeholder="Adınız:" required>
+			<input type="text"  placeholder="Soyadınız:" required>
+            <p>Təvəllüd: <input  id="datepicker" required></p>
+            <label for="woman">Qadın:</label>
+            <input type="radio" name="gender" id="woman">
+            <label for="men">Kişi:</label>
+            <input type="radio" name="gender" id="men">
+            <br>
+            <select>
+            	<option selected disabled>Oxuduğunuz universiteti seçin</option>
+            	<option>BDU</option>
+            	<option>AZTU</option>
+            	<option>AZİ</option>
+            	<option>ADA</option>
+            </select>
+            <br><br>
+            <input type="email" name="" placeholder="Emailinizi daxil edin:" required><br>
+            <input type="number" name="old" placeholder="Yaşınızı daxil edin:" min="5" max='60' id="old" required><br><br>
+            <textarea placeholder="Qısa məlumat:" rows="7"></textarea>
+            <textarea placeholder="Sevdiyiniz filmlərin adını daxil edin:"></textarea><br>
+            <label class="book">Kitab oxuyursunuz?</label>
+            <label for="yes">Bəli:</label>
+            <input type="radio" name="book" id="yes">
+            <label for="no">Xeyir:</label>
+            <input type="radio" name="book" id="no"><br><br>
+            <input type="submit" name="" value="Göndər">
+		</form>
+	</article>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
